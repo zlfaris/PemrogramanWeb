@@ -1,0 +1,75 @@
+:root {
+    --primary-red: #D32F2F;
+    --dark-red: #B71C1C;
+    --bg-light: #F8F9FA;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: var(--primary-red);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar-custom .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar-custom .nav-link:hover {
+    color: white !important;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+}
+.navbar-custom .nav-link.active {
+    background-color: white;
+    color: var(--primary-red) !important;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-header {
+    background: linear-gradient(135deg, #D32F2F 0%, #B71C1C 100%);
+    color: white;
+    padding: 60px 0 90px 0;
+    margin-bottom: -50px; /* Efek kartu menumpuk */
+    text-align: center;
+}
+
+/* Kartu Form */
+.card-overlap {
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.card-header-custom {
+    background-color: var(--primary-red);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Tombol */
+.btn-custom {
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.btn-custom:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+/* Auth Pages */
+.bg-auth {
+    background-color: var(--primary-red);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
